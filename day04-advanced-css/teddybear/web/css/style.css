@@ -1,0 +1,22 @@
+body {
+    background-image: url('../img/background.svg');
+    background-position-x: center;
+    font-size: 150%;
+    font-family: sans-serif;
+}
+
+img {
+    width: 25%;
+    margin: 2rem;
+}
+
+.white {
+    color: white;
+    margin-right: 6rem;
+    margin-top: -5rem;
+}
+
+.align-right {
+    text-align: right;
+}
+
