@@ -1,0 +1,48 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #555;
+    color: white;
+    padding: 0.1rem 0;
+    font-size: 0;
+}
+
+nav ul {
+    width: 100%;
+    padding: 0;
+}
+
+nav li {
+    text-align: center;
+    list-style-type: none;
+    padding: 0.4rem 0;
+    font-size: 1rem;
+}
+
+p {
+	padding: 2rem;
+}
+
+@media only screen and (min-width: 620px) {
+    .container {
+        width: 80%;
+    }
+    
+    nav {
+        padding: 1rem 0;
+    }
+    nav li {
+        display: inline-block;
+        width: 16.6666%;
+    }
+}
