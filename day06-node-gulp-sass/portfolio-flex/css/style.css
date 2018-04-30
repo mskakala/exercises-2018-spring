@@ -1,0 +1,181 @@
+/*
+    Green:      #54be90
+    Light Grey: #ebebeb
+    Dark Grey:  #232323
+    Grey Text:  #444444
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #ebebeb;
+  font-family: 'Anaheim', sans-serif;
+}
+
+.container {
+  width: 960px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#logo {
+  flex: 0 0 200px;
+  height: 50px;
+  background-image: url('../img/logo.png');
+}
+
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  background-color: #232323;
+  color: white;
+}
+
+nav a {
+  display: block;
+  flex: 1;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-left: 1px solid lightgray;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  background-color: #54be90;
+  color: black;
+}
+
+#banner {
+  padding: 4rem;
+  height: 350px;
+  margin-top: 50px;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+}
+
+#banner .greeting {
+  font-size: 250%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#banner .whoiam {
+  font-size: 200%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 250%;
+  text-align: center;
+}
+
+#info {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+#promo {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 2rem 1rem;
+  background-color: #232323;
+  color: white;
+}
+
+#promo > .column {
+  flex: 1;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#promo > .column .heading {
+  font-size: 150%;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#skills {
+  padding: 2rem 4rem;
+}
+
+#skills h1 {
+  color: #54be90;
+}
+
+.progress {
+  display: flex;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress .label {
+  flex: 0 0 8rem;
+  background-color: #444444;
+  color: white;
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.progress .bar {
+  flex: 1;
+  background-color: #d6d6d6;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.progress .knob {
+  background-color: #54be90;
+  height: 3rem;
+}
+
+#portfolio {
+  background-color: #54be90;
+  padding: 2rem 4rem;
+}
+
+#portfolio h1 {
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  background-color: white;
+  padding: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: black;
+}
+.card .preview {
+  width: 100%;
+  height: auto;
+}
+
+.card .body {
+  background-color: #ebebeb;
+  padding: 1rem;
+}
