@@ -1,0 +1,67 @@
+$common_background_color: #e0e0e0;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background-color: #666666;
+}
+
+/* navigation */
+nav {
+	background-color: #666666;
+	display: flex;
+	a {
+		font-size: 1.2em;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 0.5em;
+	}
+}
+
+$welcome_picture: '../img/welcome.jpg';
+section.welcome {
+
+	background-color: $common_background_color;
+	padding: 8em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $common_background_color url($welcome_picture) center center/cover no-repeat scroll;
+	background-image: url($welcome_picture);
+	color: #ffffff;
+	h1 {
+		font-size: 4em;
+		font-weight: normal;
+		margin: 0;
+	}
+	.subtitle {
+		font-size: 2em;
+		color: #999999;
+	}
+}
+
+
+section.plot {
+	background-color: $common_background_color;
+    display: flex;
+    flex-direction: row;
+ 	.text {
+		display: flex;
+		flex-direction: column;
+		font-size: 2em;
+		padding: 1em;
+    }
+}
+
+
