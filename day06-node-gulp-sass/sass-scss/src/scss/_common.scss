@@ -1,0 +1,56 @@
+@import '_mixins';
+
+
+// comments is a benefit of SASS
+
+$my_font: Arial;
+
+selector {
+  font-family: $my_font;
+}
+
+//Write SASS code to define variables main_color and highlight_color
+$main_color: darkgray;
+$highlight_color: green;
+
+// Write SASS code to make h1 and h2 tags of the main_color
+h1, h2 {
+  color: $main_color;
+}
+
+
+//Write SASS code to give a bottom, 1px solid border of the highlight_color to each <section>
+
+section {
+  border-bottom: 1px solid $highlight_color;
+}
+
+.flex-behaviour {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 250px;
+}
+
+.box-shadow {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section {
+  @extend .flex-behaviour;
+}
+
+p {
+  font-family: $my_font;
+  @extend .box-shadow;
+}
+h1 {
+  font-family: $my_font;
+}
+h2 {
+  font-family: $my_font;
+}
+li {
+  font-family: $my_font;
+  @extend .box-shadow;
+}
+

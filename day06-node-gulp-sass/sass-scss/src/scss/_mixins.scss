@@ -1,0 +1,17 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin various_box($size, $color) {
+    width: 10 * $size;
+    height: 10 * $size;
+    padding: 5 * $size;
+    margin: 5 * $size;
+    border: 1px solid black;
+    display:block;
+    float:left;
+    background-color: #000 +  #f00 / random(255) + #0f0 / random(255) + #00f / random(255) + #888;
+}

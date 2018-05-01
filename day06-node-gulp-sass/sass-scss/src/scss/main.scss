@@ -1,0 +1,45 @@
+@import '_common';
+
+
+
+
+//Write SASS code to make all the paragraph within the <section> with class first to have a background-color #e0e0e0
+
+//Use rule nesting for everything.
+
+section {
+  a {
+    //Write SASS code to define all links within the <section> with class first to not be underlined
+    text-underline: none;
+  }
+    //Write SASS code to define all links within the <section> with class first and within paragraphs to be of the highlight_color
+  .first {
+    p {
+      //Write SASS code to make all the paragraph within the <section> with class first to have a
+      background-color: #e0e0e0;
+      a {
+        color: $highlight_color;
+      }
+    }
+  }
+}
+
+$fontSize: 1em;
+
+
+section {
+  font-size: $fontSize * 2;
+  //background-color: #112244 + #111111; // result is #223355
+}
+
+
+
+.box10 { @include border-radius(10px); }
+.box20 { @include border-radius(20px); }
+
+
+.box1 { @include various_box(1px, 1); }
+.box2 { @include various_box(5px, 2); }
+.box3 { @include various_box(10px, 3); }
+
+@import '_shadows';
