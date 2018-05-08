@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Taxed Salary</title>
+</head>
+<body>
+  <h1>Taxed Salary</h1>
+
+  <script src="index.js"></script>
+  <script>
+    var pay = parseInt(prompt('Pay per hour:'));
+    var hours = parseInt(prompt('Hours a day:'));
+    var days = parseInt(prompt('Days per month:'));
+    
+    var result = salary(pay, hours, days);
+    alert(result);
+
+    var tax = parseFloat(prompt('Tax:'));
+    result = taxed_salary(result, tax);
+    alert(result);
+  </script>
+</body>
+</html>
