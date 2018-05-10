@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 720px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+}
+
+.padlock {
+  width: 200px;
+  height: auto;
+}
+
+.message {
+  line-height: 135%;
+  margin-left: 2rem;
+}
