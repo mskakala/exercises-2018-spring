@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.side1, .side2, .side3, .side4, .side5, .side6 {
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  transition: 500ms;
+}
+
+.side1 {
+  background-image: url('../img/side1.png');
+}
+
+.side2 {
+  background-image: url('../img/side2.png');
+}
+
+.side3 {
+  background-image: url('../img/side3.png');
+}
+
+.side4 {
+  background-image: url('../img/side4.png');
+}
+
+.side5 {
+  background-image: url('../img/side5.png');
+}
+
+.side6 {
+  background-image: url('../img/side6.png');
+}
