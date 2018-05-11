@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/uncheck.svg');
+  background-size: cover;
+  margin-right: 0.5rem;
+}
+
+.check {
+  background-image: url('../img/check.svg');
+  transition: 600ms;
+}
+
+.text {
+  display: inline-block;
+  vertical-align: top;
+  color: #444;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
