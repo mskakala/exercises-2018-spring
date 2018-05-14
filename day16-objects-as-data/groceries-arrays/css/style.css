@@ -8,6 +8,10 @@ body {
   font-family: sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
+
 .item {
   border: 1px solid gray;
   background-color: #eee;
@@ -21,6 +25,11 @@ body {
 
 .controls {
   display: flex;
+  margin-bottom: 1rem;
+}
+
+.inputs {
+  margin-left: 1rem;
 }
 
 button.add {
@@ -36,7 +45,7 @@ button.add {
 }
 
 input[type="text"] {
-  line-height: 2rem;
+  width: 100%;
 }
 
 button.remove {
