@@ -10,7 +10,49 @@
 <body>
 
     <script>
-        console.log(train.stops[1]);
+        // console.log(train.stops[1]);
+
+        // console.log(train.delayed);
+        // train.delayed = true;
+        // console.log(train.delayed);
+
+        // train.depart();
+        // train.arriveTo(0);
+        // train.depart();
+        // train.arriveTo(1);
+        // train.depart();
+        // train.arriveTo(2);
+
+
+        // global function != object method
+        // function depart() {
+        //     console.log('Something completely different');
+        // }
+        // depart();
+
+        // creating a new instance of Train
+        var morning_train = new Train();
+        // setting all of the morning_train's properties
+        morning_train.name = 'Southern Express';
+        morning_train.departure = '5:55';
+        morning_train.stops = [
+            'Ceske Budejovice',
+            'Tabor',
+            'Praha'
+        ];
+        morning_train.delayed = false;
+
+        // creating another new instance of Train
+        var afternoon_train = new Train();
+        afternoon_train.name = 'Jan Zizka';
+        afternoon_train.departure = '16:04';
+        
+        // creating another new instance of Train
+        var evening_train = new Train('Budvar express', '19:01');
+
+        console.log(morning_train);
+        console.log(afternoon_train);
+        console.log(evening_train);
     </script>
     
 </body>

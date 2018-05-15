@@ -10,13 +10,62 @@
 <body>
 
     <script>
-console.log(book.title);
-// console.log(book.genres);
-book.genres.forEach(function(genre) {
-    console.log(genre);
-})
-console.log(book.author.last_name);
-console.log(book.editions[0].year_of_issue);
+// console.log(book.title);
+// // console.log(book.genres);
+// book.genres.forEach(function(genre) {
+//     console.log(genre);
+// })
+// console.log(book.author.last_name);
+// console.log(book.editions[0].year_of_issue);
+
+// book.genres.push('Young adult');
+// book.editions[0].publisher = 'Pearson';
+// book.editions[1].publisher = 'Random House';
+
+// console.log(book);
+
+// book.open();
+
+// book.read();
+// book.setBookmark(12);
+// book.read();
+
+    var fiftyshades = new Book();
+    fiftyshades.title = 'Fifty Shades of Grey';
+    fiftyshades.genres = [
+            'fantasy',
+            'drama'
+        ];
+    fiftyshades.author.first_name = 'E L';
+    fiftyshades.author.last_name = 'James';
+    fiftyshades.author.year_of_birth = 1963;
+    fiftyshades.editions = [
+        {
+            edition_number: '1234567890',
+            year_of_issue: 2012,
+            nr_of_pages: 346
+        },
+        {
+            edition_number: '0987654321',
+            year_of_issue: 2015,
+            nr_of_pages: 372
+        }
+    ];
+    console.log(fiftyshades);
+
+    var gameofthrones = new Book();
+    gameofthrones.title = 'Song of Ice and Fire';
+    console.log(gameofthrones);
+
+    var carrie = new Book('Carrie');
+    
+    carrie.addEdition({
+        edition_number: '5432109876',
+        year_of_issue: 1973,
+        nr_of_pages: 248
+    });
+
+    console.log(carrie);
     </script>
     
 </body>

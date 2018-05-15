@@ -1,3 +1,36 @@
+function Book(title) {
+
+    this.title = title;
+    this.genres = [];
+    this.author = {
+        first_name: null,
+        last_name: null,
+        year_of_birth: null
+    }
+    this.editions = [];
+    this.bookmark = null;
+
+    this.open = function() {
+        console.log('Opening the book');
+    }
+
+    this.setBookmark = function(page_nr) {
+        this.bookmark = page_nr;
+    }
+
+    this.read = function() {
+        if(this.bookmark == null) {
+            console.log('Starting to read ' + this.title + ' on page 1');
+        } else {
+            console.log('Resuming reading ' + this.title + ' on page ' + this.bookmark);
+        }
+    }
+
+    this.addEdition = function(new_edition) {
+        this.editions.push(new_edition);
+    }
+}
+
 var book = {
     title: 'Fifty Shades of Grey',
     genres: [
@@ -20,5 +53,8 @@ var book = {
             year_of_issue: 2015,
             nr_of_pages: 372
         }
-    ]
+    ],
+    bookmark: null,
+
+    
 }
