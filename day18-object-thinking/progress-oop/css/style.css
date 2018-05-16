@@ -3,8 +3,9 @@
 }
 
 body {
-  width: 600px;
+  max-width: 600px;
   margin: 100px auto;
+  padding: 0 16px;
   font-family: sans-serif;
 }
 
