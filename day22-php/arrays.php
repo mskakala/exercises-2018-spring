@@ -62,3 +62,12 @@ foreach ($cars_i_want as $key => $car_name) {
 }
 
 echo '</ul>';
+
+?>
+<ul>
+    <?php foreach ($cars_i_want as $key => $car_name) : ?>
+
+        <li><?= $car_name ?></li>
+        
+    <?php endforeach; ?>
+</ul>
