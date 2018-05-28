@@ -1,6 +1,6 @@
 <?php
 
-// namespace \
+// namespace \ - global
 
 require_once 'system/Page.php'; // one page of the website
 
@@ -8,7 +8,7 @@ require_once 'system/Page.php'; // one page of the website
 require_once 'Neo/BookPreview/Book.php'; // a book being sold
 require_once 'Neo/BookPreview/Page.php'; // one page of a book
 
-$book = new Book();
+$book = new \Neo\BookPreview\Book();
 $book->name = 'The Last Kingdom';
 
 // display the homepage

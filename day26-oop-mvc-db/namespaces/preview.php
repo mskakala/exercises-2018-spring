@@ -6,6 +6,8 @@ require_once 'system/Page.php'; // one page of the website
 require_once 'Neo/BookPreview/Book.php'; // a book being sold
 require_once 'Neo/BookPreview/Page.php'; // one page of a book
 
+use Neo\BookPreview\Book as Book;
+use Neo\BookPreview\Page as Page;
 
 // preview a book
 $book = new Book();
