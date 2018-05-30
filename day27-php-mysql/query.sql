@@ -73,3 +73,19 @@ LIMIT 1;
 DELETE
 FROM `users`
 WHERE `id` > 10;
+
+
+SELECT `city`.*
+FROM `city`
+WHERE 1
+ORDER BY `Population` DESC
+LIMIT 0, 100;
+
+
+SELECT *
+FROM `city`
+WHERE `District` LIKE '%Holland';
+
+SELECT *
+FROM `city`
+WHERE `District` LIKE '%ville%';
