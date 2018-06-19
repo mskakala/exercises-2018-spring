@@ -127,3 +127,20 @@ function longer_string($string_a, $string_b)
 }
 
 $longer_string = longer_string('Joe', 'Black');
+
+
+function roll_dice($nr_of_dice = 1, $sides_of_each_dice = 6)
+{
+    $sum = 0;
+
+    for ($i = 0; $i < $nr_of_dice; $i++) {
+
+        $number_rolled = rand(1, $sides_of_each_dice);
+
+        $sum += $number_rolled;
+    }
+
+    return $sum;
+}
+
+$result = roll_dice(3, 10); // result is a number between 3 and 30
