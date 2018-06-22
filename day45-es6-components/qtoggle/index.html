@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>QBUtton</title>
+</head>
+<body>
+	<main id="app">
+		<div class="qtogl qtogl-demo question"></div>
+	</main>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$('.qtogl').click(function() {
+			if($(this).hasClass('question')) {
+				$(this).removeClass('question');
+				$(this).addClass('check');
+			} else if($(this).hasClass('check')) {
+				$(this).removeClass('check');
+				$(this).addClass('cross');
+			} else if($(this).hasClass('cross')) {
+				$(this).removeClass('cross');
+				$(this).addClass('question');
+			}
+		});
+	</script>
+</body>
+</html>
