@@ -1,0 +1,9 @@
+.hours {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.minutes {
+  color: blue;
+  cursor: pointer;
+}
