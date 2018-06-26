@@ -1,0 +1,30 @@
+.quote {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+.user {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.quote button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.3rem;
+  background: darkblue;
+  color: white;
+  cursor: pointer;
+}
+
+.counter {
+  background: white;
+  padding: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
