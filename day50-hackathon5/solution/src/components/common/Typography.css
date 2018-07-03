@@ -1,0 +1,16 @@
+.Typography {
+  font-size: 14px;
+  color: #171b1e;
+}
+
+.Typography.header {
+  font-size: 22px;
+}
+
+.Typography.small {
+  font-size: 12px;
+}
+
+.Typography.secondary {
+  color: #7f91a8;
+}
