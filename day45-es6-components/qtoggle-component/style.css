@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.qtoggle {
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transition: 400ms;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+.qtogl-demo {
+	width: 50vmin;
+	height: 50vmin;
+}
+
+.check {
+	background-image: url('img/check.svg');
+}
+
+.cross {
+	background-image: url('img/cross.svg');
+}
+
+.question {
+	background-image: url('img/question.svg');
+}

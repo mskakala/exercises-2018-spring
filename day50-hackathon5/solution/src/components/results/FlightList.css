@@ -1,0 +1,23 @@
+.FlightListHeader {
+  margin-bottom: 5px;
+}
+
+.FlightListItems {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.FlightListItem {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0,0,0,.14);
+  transition: box-shadow .3s ease-out;
+}
+
+.FlightListItem:hover {
+  box-shadow: 0 2px 7px rgba(0,0,0,.32);
+}

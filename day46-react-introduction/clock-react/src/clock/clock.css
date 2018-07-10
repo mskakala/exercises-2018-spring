@@ -1,0 +1,19 @@
+.hours {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.minutes {
+  color: blue;
+  cursor: pointer;
+}
+
+.am {
+  color: yellow;
+  transition: 500ms;
+}
+
+.pm {
+  color: darkblue;
+  transition: 500ms;
+}
