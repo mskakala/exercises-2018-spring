@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX test</title>
+
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <button onclick="run_ajax()">RUN AJAX</button>
+
+    <button onclick="jq_load_articles()">LOAD ARTICLES WITH JQUERY</button>
+
+    <ul id="categories"></ul>
+
+    <div id="articles"></div>
+    
+    <script>
+/**
+ * runs an AJAX request
+ */
+function ajax(method, url, data, callback) {
+
+    // create a AJAX request object
+    var ajax = new XMLHttpRequest();
+
+    // specify what should happen on change of it's state
+    ajax.onreadystatechange = function() {
+        // handle any state change here, eg:
+        if(ajax.readyState == 4) { // 4 == request returned with a response
+
+            // call the given callback function with the response
+            (callback)(ajax.response);
+        }
+    }
+
+    // initialize the request
+    ajax.open(method, url);
+
+    // send the request
+    ajax.send(data);
+}
+
+function run_ajax() {
+    ajax(
+        'get', 
+        'https://classes.codingbootcamp.cz/assets/classes/602/guardian.php',
+        {},
+        function(response) { // this function will be called when the response returns
+            
+            var response_data = JSON.parse(response);
+
+            console.log(response_data);
+
+            response_data.data.forEach(function(item) {
+                var li = document.createElement('li');
+                li.innerHTML = item;
+                document.getElementById('categories').appendChild(li);
+            });
+        }
+    );
+}
+
+function jq_load_articles() {
+    $.ajax({
+        method: 'get',
+        url: 'https://classes.codingbootcamp.cz/assets/classes/602/guardian.php?cat=science',
+        success: function(data, status) {
+            console.log(data);
+            data.data.channel.item.forEach(function(article) {
+                var article = $(`<div class="article">
+                    <h2>${article.title}</h2>
+                    <div class="description">${article.description}</div>`);
+                $('#articles').append(article);
+            });
+        }
+    })
+}
+
+    </script>
+
+</body>
+</html>
